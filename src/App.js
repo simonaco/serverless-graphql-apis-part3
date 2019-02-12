@@ -15,7 +15,7 @@ const getTeams = gql`
 
 const App = () => (
   <div>
-    <Query query={getTeams}>
+    <Query query={getTeams} pollInterval={1000}>
       {({ loading, data }) => (
         <div>
           <svg height="700" width="700">

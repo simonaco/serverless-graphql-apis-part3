@@ -32,7 +32,7 @@ steps:
     displayName: 'AzureBlob File Copy'
     inputs:
       SourcePath: $(System.DefaultWorkingDirectory)\build
-      azureSubscription: gatsbyconnection
+      azureSubscription: staticstorage
       Destination: AzureBlob
       storage: votingapi
       ContainerName: '$web'
